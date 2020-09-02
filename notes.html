@@ -1,0 +1,20 @@
+const rbs = document.querySelectorAll('input[name="choice"]');
+let selectedValue;
+for (const rb of rbs) {
+    if (rb.checked) {
+        selectedValue = rb.value;
+        break;
+    }
+}
+
+function checkform()
+{
+  if (document.getElementById("promotioncode").value == "")
+{
+    // something is wrong
+    alert('There is a problem with the first field');
+    return false;
+}
+
+return true;
+}
